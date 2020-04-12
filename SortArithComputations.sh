@@ -35,3 +35,18 @@ do
 done
 
 echo ${array[@]}
+
+for((k=0;k<${#array[@]};k++))
+do
+	for((l=0;l<${#array[@]};l++))
+	do
+		if [ ${array[$k]} -lt ${array[$l]} ]
+		then
+			temp=${array[$k]}
+			array[$k]=${array[$l]}
+			array[$l]=$temp
+		fi
+	done
+done
+
+echo ${array[@]}
