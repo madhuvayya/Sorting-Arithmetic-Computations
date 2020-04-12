@@ -8,3 +8,4 @@ echo "enter c value:"
 read c
 
 echo "$(($a+$b*$c))"
+echo "$(( $a * $b + $c))"
