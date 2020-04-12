@@ -6,3 +6,5 @@ echo "enter b value:"
 read b
 echo "enter c value:"
 read c
+
+echo "$(($a+$b*$c))"
