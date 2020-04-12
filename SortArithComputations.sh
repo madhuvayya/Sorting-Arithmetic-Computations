@@ -15,3 +15,8 @@ computes[$((i++))]="$(( $a + $b * $c ))"
 computes[$((i++))]="$(( $a * $b + $c ))"
 computes[$((i++))]="$(( $c + $a / $b ))"
 computes[$((i++))]="$(( $a % $b + $b ))"
+
+for((j=0;j<${#computes[@]};j++))
+do
+	array[$j]=${computes[$j]}
+done
